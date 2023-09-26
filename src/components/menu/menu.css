@@ -1,0 +1,32 @@
+.menu{
+    height: 100vh;
+    width: 300px;
+    background-color: #02281b;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 100;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s ease;
+  
+}
+ul{
+    list-style-type: none;
+    font-size: 30px;
+     >li{
+        font-weight: 400;
+        padding: 20px;
+
+        > a{
+            color: white;
+            text-decoration: none;
+        }
+     }
+}
+
+.active{
+    right: 0px;
+}

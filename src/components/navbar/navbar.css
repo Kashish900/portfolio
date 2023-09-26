@@ -1,0 +1,65 @@
+.navbar{
+    background-color: rgb(157, 178, 170);
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    z-index: 200;
+    color: #02281b;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    transition: all 2s ease;
+}
+.navbar a{
+    color: #02281b;;
+    text-decoration: none;
+    margin: 0px 10px;
+    transition: all 2s ease;
+    font-weight: bold;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+
+    .name{
+        margin: 0px 20px;
+        display: flex;
+        align-items: center;
+
+        >.myimage{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .contactdetails>span{
+            margin: 0px 4px;
+            font-size: 16px;
+            display: block;
+        }
+    } 
+}
+
+.right{
+    margin-right: 12px;
+}
+
+.active{
+    color: white;
+    background-color: #02281b;;
+    transition: all 2s ease;
+
+    .contactdetails > a{
+        color: white;
+        transition: all 2s ease;
+    }
+}
+
+@media(max-width:500px){
+    .number{
+        display: block;
+    }
+}
