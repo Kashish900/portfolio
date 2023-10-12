@@ -1,3 +1,62 @@
 .contact{
-    background-color: rgb(216, 113, 113);
+    background-color: var(--theme2);
+    display: flex;
+
+    > .leftcontact{
+        width: 50vw;
+    }
+
+    > .leftcontact>img{
+        width: 43vw;
+        height: inherit;
+    }
+
+    > .rightcontact{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        > h2{
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        > .form > form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        > .form div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+
+            > label{
+                font-size: 20px;
+                font-weight: 600;
+                margin-right: 20px;
+            }
+
+            >input, textarea{
+                padding: 7px;
+                border-radius: 10px;
+                width: 250px;
+            }
+
+            > button{
+                padding: 10px 20px;
+                border-radius: 8px;
+                outline: 0;
+                background-color: var(--theme1);
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+
+   
 }

@@ -1,3 +1,114 @@
 .intro{
-    background-color: rgb(16, 84, 84);
+    background-color: var(--theme2);
+    display: flex;
+
+    > .left{
+        flex: 0.5;
+
+         > .imgcontainer{
+            height: 500px;
+            width: 500px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-left: 10%;
+
+            >  img{
+                height: 90%;
+                width: 90%;
+                border-radius: 50%;
+                background-color: var(--theme3);
+                border: 4px solid white;
+                box-shadow: 0px 0px 40px black;
+            }
+        }
+    }
+
+    > .right{
+        margin: 0;
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+
+        > h2{
+            font-size: 30px;
+        }
+        > h1{
+            font-size: 60px;
+            padding: 10px 0px;
+        }
+        > h3{
+            font-size: 25px;
+
+            > span{
+                padding: 10px;
+                background-color: rgb(51, 48, 48);
+                color: white;
+            }
+        }
+       > a > img{
+        width: 60px;
+        position: absolute;
+        right: 13%;
+        bottom: 10%;
+        animation: blink 2s infinite;
+       }
+
+      
+    }
+}
+
+@keyframes blink {
+    0%{
+        bottom: 11%;
+    }
+    50%{
+        bottom : 5%;
+    }
+    100%{
+        bottom : 11%;
+    }
+   }
+   @keyframes blinksecond {
+    0%{
+        bottom: 8%;
+    }
+    50%{
+        bottom : 4%;
+    }
+    100%{
+        bottom : 8%;
+    }
+   }
+
+
+
+/* 
+   for mobile screen */
+   @media(max-width:500px){
+    .intro{
+        display: block;
+    }
+    .intro> .left > .imgcontainer{
+        height: 360px;
+    }
+    .intro> .right > h1{
+        font-size: 35px;
+    }
+    .intro> .right > h2{
+        font-size: 30px;
+    }
+    .intro> .right > h3{
+        font-size: 20px;
+    }
+    .intro> .right > a > img{
+        width: 40px;
+        position: absolute;
+        right: 8%;
+        bottom: 4%;
+        animation: blinksecond 2s infinite;
+    }
 }

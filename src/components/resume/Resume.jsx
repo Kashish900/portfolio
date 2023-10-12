@@ -3,7 +3,18 @@ import './resume.css';
 
 function Resume() {
   return (
-    <div  className='resume' id='resume' >Resume</div>
+    <div  className='resume' id='resume' >
+      <div className="leftresume">
+        <img src="./photos/resumeimage.jpg" alt="" />
+      </div>
+      <div className="rightresume">
+        <div className="download">
+          <h2>Download Resume</h2>
+          <a href='./photos/resume.pdf' target='blank'>Download</a>
+        </div>
+        
+      </div>
+    </div>
   )
 }
 

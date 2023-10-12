@@ -6,6 +6,7 @@ function Menu({menuoption,setmenufunction}) {
     <div  className={"menu " + (menuoption && "active")}>
         <ul>
             <li onClick={()=>{setmenufunction(false)}}><a  href='#intro'>Home</a></li>
+            <li onClick={()=>{setmenufunction(false)}}><a  href='#portfolio'>Portfolio</a></li>
             <li onClick={()=>{setmenufunction(false)}}><a  href='#skill'>Skill</a></li>
             <li onClick={()=>{setmenufunction(false)}}><a  href='#project'>Project</a></li>
             <li onClick={()=>{setmenufunction(false)}}><a  href='#resume'>Resume</a></li>

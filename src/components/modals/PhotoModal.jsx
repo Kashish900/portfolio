@@ -1,7 +1,5 @@
 import React from 'react';
 import './photomodal.css';
-import myphoto from '../../images/mine.jpg';
-
 import {FaXmark} from 'react-icons/fa6';
 
 function PhotoModal() {
@@ -18,7 +16,7 @@ function PhotoModal() {
             <div className="closediv"  onClick={myfunc2}><FaXmark size={25}/></div>
         </div>
         <div className="mainimage">
-            <img src={myphoto} alt="profilepic" />
+            <img src="./photos/profilepic.png" alt="profilepic" />
         </div>
     </div>
   )

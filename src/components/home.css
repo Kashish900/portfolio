@@ -1,3 +1,10 @@
+
+:root{
+    --theme1 : #0a3a29;
+    --theme2 : rgb(224 240 237);
+    --theme3 : #a07d7d;
+}
+
 .home{
     height: 100vh;
 
@@ -9,9 +16,10 @@
     position: relative;
 }
 
-.intro, .skill, .project, .resume, .contact{
+.intro, .skill, .project, .resume, .contact, .portfolio{
     height: calc(100vh - 70px);
     scroll-snap-align: start;
+    overflow-y: scroll;
 }
 .sections> .intro{
     padding-top: 70px;

@@ -19,10 +19,15 @@
     justify-content: space-between;
     padding: 10px;
 }
+.mainimage{
+    padding: 20px;
+    box-sizing: border-box;
+}
 .mainimage img{
     width: 300px;
     border-radius: 50%;
     padding: 10px 20px;
+    background-color: rgb(85, 66, 66);
 }
 .heading{
     margin-left: 100px;

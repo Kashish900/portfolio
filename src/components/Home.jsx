@@ -8,6 +8,7 @@ import Project from './projects/Project'
 import Resume from './resume/Resume'
 import PhotoModal from './modals/PhotoModal'
 import Menu from './menu/Menu'
+import Portfolio from './portfolio/Portfolio'
 
 function Home() {
 const [menuoption, setmenufunction] = useState(false);
@@ -17,6 +18,7 @@ const [menuoption, setmenufunction] = useState(false);
       <Navbar  menuoption={menuoption} setmenufunction={setmenufunction} />
       <div className="sections">
         <Intro/>
+        <Portfolio/>
         <Skill/>
         <Project/>
         <Resume/>
